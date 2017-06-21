@@ -27,4 +27,23 @@ describe('expect', () => {
             (() => expect.toExist('', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
         });
     });
+
+    describe('#toNotExist', () => {
+        it('should pass if expectation is fulfilled', () => {
+            expect.toNotExist(false);
+            expect.toNotExist(null);
+            expect.toNotExist(undefined);
+            expect.toNotExist(0);
+            expect.toNotExist(NaN);
+            expect.toNotExist('');
+        });
+
+        it('should fail if expectation is unfulfilled', () => {
+            (() => expect.toNotExist(true, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+            (() => expect.toNotExist(-1, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+            (() => expect.toNotExist(1, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+            (() => expect.toNotExist('a', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+            (() => expect.toNotExist(new Object(), errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+        });
+    });
 });
