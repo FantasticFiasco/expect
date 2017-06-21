@@ -7,7 +7,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ### Added
 
-- `toBeTrue` - Expect that a condition is true
-- `toBeFalse` - Expect that a condition is false
-- `toExist` - Expect that a value exists
-- `toNotExist` - Expect that a value doesn't exist
+- `toBeTrue` - Expect a condition to be true
+- `toBeFalse` - Expect a condition to be false
+- `toExist` - Expect a value to exist
+- `toNotExist` - Expect a value not to exist
+- `toBeAlphanumeric` - Expect a value to be alphanumeric

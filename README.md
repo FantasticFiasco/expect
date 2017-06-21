@@ -43,28 +43,35 @@ npm install @fantasticfiasco/expect
 - `condition: boolean` The condition expected to be true
 - `errorMessage: string` The optional error message displayed if expectation fails
 
-Expect that a condition is true.
+Expect a condition to be true.
 
 ### `toBeFalse(condition[, errorMessage])`
 
 - `condition: boolean` The condition expected to be false
 - `errorMessage: string` The optional error message displayed if expectation fails
 
-Expect that a condition is false.
+Expect a condition to be false.
 
 ### `toExist<T>(value[, errorMessage])`
 
 - `value: T` The value expected to exist
 - `errorMessage: string` The optional error message displayed if expectation fails
 
-Expect that a value exists.
+Expect a value to exist.
 
 ### `toNotExist<T>(value[, errorMessage])`
 
 - `value: T` The value expected not to exist
 - `errorMessage: string` The optional error message displayed if expectation fails
 
-Expect that a value doesn't exist.
+Expect a value not to exist.
+
+### `toBeAlphanumeric(value[, errorMessage])`
+
+- `value: string` The value expected to be alphanumeric
+- `errorMessage: string` The optional error message displayed if expectation fails
+
+Expect a value to be alphanumeric.
 
 ## Credit
 

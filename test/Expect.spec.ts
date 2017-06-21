@@ -1,7 +1,7 @@
 import * as chai from 'chai';
 
 import * as expect from './../src';
-import { ExpectationError } from './../src';
+import { ExpectationError } from './../src/ExpectationError';
 
 chai.should();
 
@@ -64,6 +64,38 @@ describe('expect', () => {
             (() => expect.toNotExist(1, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
             (() => expect.toNotExist('a', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
             (() => expect.toNotExist(new Object(), errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+        });
+    });
+
+    describe('#toBeAlphanumeric', () => {
+        it('should pass if expectation is fulfilled', () => {
+            expect.toBeAlphanumeric('0');
+            expect.toBeAlphanumeric('9');
+            expect.toBeAlphanumeric('a');
+            expect.toBeAlphanumeric('A');
+            expect.toBeAlphanumeric('z');
+            expect.toBeAlphanumeric('Z');
+            expect.toBeAlphanumeric('a0');
+            expect.toBeAlphanumeric('a9');
+            expect.toBeAlphanumeric('z0');
+            expect.toBeAlphanumeric('z9');
+            expect.toBeAlphanumeric('0a');
+            expect.toBeAlphanumeric('9a');
+            expect.toBeAlphanumeric('0z');
+            expect.toBeAlphanumeric('9z');
+        });
+
+        it('should fail if expectation is unfulfilled', () => {
+            (() => expect.toBeAlphanumeric('', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+            (() => expect.toBeAlphanumeric(' ', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+            (() => expect.toBeAlphanumeric(' 0', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+            (() => expect.toBeAlphanumeric('0 ', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+            (() => expect.toBeAlphanumeric(' 9', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+            (() => expect.toBeAlphanumeric('9 ', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+            (() => expect.toBeAlphanumeric(' a', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+            (() => expect.toBeAlphanumeric('a ', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+            (() => expect.toBeAlphanumeric(' z', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+            (() => expect.toBeAlphanumeric('z ', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
         });
     });
 });
