@@ -1,5 +1,5 @@
 {
-  "name": "@FantasticFiasco/expect",
+  "name": "@fantasticfiasco/expect",
   "version": "0.0.1",
   "description": "A Node.js library written in TypeScript providing argument validation.",
   "keywords": [
