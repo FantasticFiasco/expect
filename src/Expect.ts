@@ -61,3 +61,21 @@ export function toBeAlphanumeric(value: string, errorMessage?: string) {
 }
 
 const alphanumeric = /^[0-9A-Z]+$/i;
+
+/**
+ * Expect a value to only contain characters from a range of character codes.
+ * @param value The value expected to have characters from a range of character codes.
+ * @param minCharCode The expected minimum character code.
+ * @param maxCharCode The expected maximum character code.
+ * @param errorMessage The optional error message displayed if expectation fails.
+ * @throws {ExpectationError}
+ */
+export function toBeCharCodes(value: string, minCharCode: number, maxCharCode: number, errorMessage?: string) {
+    for (let index = 0; index < value.length; index++) {
+        const charCode = value.charCodeAt(index);
+
+        if (charCode < minCharCode || charCode > maxCharCode) {
+            throw new ExpectationError(errorMessage);
+        }
+    }
+}

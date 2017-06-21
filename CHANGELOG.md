@@ -12,3 +12,4 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - `toExist` - Expect a value to exist
 - `toNotExist` - Expect a value not to exist
 - `toBeAlphanumeric` - Expect a value to be alphanumeric
+- `toBeCharCodes` Expect a value to only contain characters from a range of character codes

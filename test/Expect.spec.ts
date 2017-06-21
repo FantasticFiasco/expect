@@ -98,4 +98,19 @@ describe('expect', () => {
             (() => expect.toBeAlphanumeric('z ', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
         });
     });
+
+    describe('#toBeCharCodes', () => {
+        it('should pass if expectation is fulfilled', () => {
+            expect.toBeCharCodes(String.fromCharCode(65), 65, 90);
+            expect.toBeCharCodes(String.fromCharCode(90), 65, 90);
+            expect.toBeCharCodes(String.fromCharCode(90, 90), 65, 90);
+        });
+
+        it('should fail if expectation is unfulfilled', () => {
+            (() => expect.toBeCharCodes(String.fromCharCode(64), 65, 90, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+            (() => expect.toBeCharCodes(String.fromCharCode(91), 65, 90, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+            (() => expect.toBeCharCodes(String.fromCharCode(65, 91), 65, 90, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+            (() => expect.toBeCharCodes(String.fromCharCode(64, 90), 65, 90, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+        });
+    });
 });

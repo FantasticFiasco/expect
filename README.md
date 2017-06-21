@@ -73,6 +73,15 @@ Expect a value not to exist.
 
 Expect a value to be alphanumeric.
 
+### `toBeCharCodes(value, minCharCode, maxCharCode[, errorMessage])`
+
+- `value: string` The value expected to have characters from a range of character codes
+- `minCharCode: number` The expected minimum character code
+- `maxCharCode: number` The expected maximum character code
+- `errorMessage: string` The optional error message displayed if expectation fails
+
+Expect a value to only contain characters from a range of character codes.
+
 ## Credit
 
 Thank you [JetBrains](https://www.jetbrains.com/) for your important initiative to support the open source community with free licenses to your products.
