@@ -27,8 +27,6 @@
     "prebuild": "npm run clean",
     "build": "tsc",
     "postbuild": "cpx \"./src/**/*.{d.ts,js}\" ./lib/",
-    "prestart": "npm run build",
-    "start": "node ./src/server.js",
     "pretest": "npm run build",
     "test": "mocha --recursive",
     "lint": "tslint \"./src/**/*.ts\" --exclude \"./**/*.d.ts\"",
