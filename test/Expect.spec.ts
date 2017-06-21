@@ -9,6 +9,16 @@ describe('expect', () => {
 
     const errorMessage = 'Some error message';
 
+    describe('#toBeTrue', () => {
+        it('should pass if expectation is fulfilled', () => {
+            expect.toBeTrue(true);
+        });
+
+        it('should fail if expectation is unfulfilled', () => {
+            (() => expect.toBeTrue(false, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+        });
+    });
+
     describe('#toExist', () => {
         it('should pass if expectation is fulfilled', () => {
             expect.toExist(true);
