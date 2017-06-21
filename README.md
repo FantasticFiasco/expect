@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/FantasticFiasco/expect.svg?branch=master)](https://travis-ci.org/FantasticFiasco/expect)
 [![Coverage Status](https://coveralls.io/repos/github/FantasticFiasco/expect/badge.svg)](https://coveralls.io/github/FantasticFiasco/expect)
-[![npm version](https://img.shields.io/npm/v/expect.svg)](https://www.npmjs.com/package/expect)
+[![npm version](https://img.shields.io/npm/v/@fantasticfiasco/expect.svg)](https://www.npmjs.com/package/@fantasticfiasco/expect)
 [![Greenkeeper badge](https://badges.greenkeeper.io/FantasticFiasco/expect.svg)](https://greenkeeper.io/)
 [![dependencies Status](https://david-dm.org/FantasticFiasco/expect/status.svg)](https://david-dm.org/FantasticFiasco/expect)
 [![devDependencies Status](https://david-dm.org/FantasticFiasco/expect/dev-status.svg)](https://david-dm.org/FantasticFiasco/expect?type=dev)
@@ -25,7 +25,7 @@ function update(person) {
     expect.toExist(person.name);
     expect.toBeTrue(person.age >= 0, 'existential theories are not up for discussion');
 
-    // Here comes your code...
+    // Squint your eyes and imagine your code here...
 }
 
 ```
