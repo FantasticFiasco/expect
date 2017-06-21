@@ -1,0 +1,58 @@
+{
+  "name": "@FantasticFiasco/expect",
+  "version": "0.0.1",
+  "description": "A Node.js library written in TypeScript providing argument validation.",
+  "keywords": [
+    "expect",
+    "argument",
+    "validation"
+  ],
+  "homepage": "https://github.com/FantasticFiasco/expect",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FantasticFiasco/expect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FantasticFiasco/expect/issues"
+  },
+  "author": "Mattias Kindborg",
+  "license": "Apache-2.0",
+  "main": "./lib/index.js",
+  "types": "./lib/index",
+  "engines": {
+    "node": ">=4.6.1"
+  },
+  "scripts": {
+    "clean": "rimraf \"./+(src|test)/**/*.d.ts\" \"./+(src|test)/**/*.js.map\" \"./+(src|test)/**/*.js\" ./lib ./coverage",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "postbuild": "cpx \"./src/**/*.{d.ts,js}\" ./lib/",
+    "prestart": "npm run build",
+    "start": "node ./src/server.js",
+    "pretest": "npm run build",
+    "test": "mocha --recursive",
+    "lint": "tslint \"./src/**/*.ts\" --exclude \"./**/*.d.ts\"",
+    "precoverage": "npm run build",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec --recursive",
+    "postcoverage": "remap-istanbul --input coverage/coverage.json --type lcovonly --output coverage/lcov.info",
+    "precoverage:publish": "npm run coverage",
+    "coverage:publish": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "prepack": "npm run test && npm run lint",
+    "pack": "npm pack"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "3.5.2",
+    "@types/mocha": "2.2.41",
+    "@types/node": "7.0.29",
+    "chai": "4.0.2",
+    "coveralls": "2.13.1",
+    "cpx": "1.5.0",
+    "istanbul": "0.4.5",
+    "mocha": "3.4.2",
+    "remap-istanbul": "0.9.5",
+    "rimraf": "2.6.1",
+    "tslint": "5.4.3",
+    "typescript": "2.3.4"
+  }
+}

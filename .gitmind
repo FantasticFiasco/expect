@@ -1,0 +1,2 @@
+issue: https://github.com/FantasticFiasco/expect/issues/{0} #(\d+)
+tag: https://github.com/FantasticFiasco/expect/releases/tag/{0} (v\d+\.\d+\.\d+)
