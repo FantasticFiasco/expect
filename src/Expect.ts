@@ -13,6 +13,18 @@ export function toBeTrue(condition: boolean, errorMessage?: string) {
 }
 
 /**
+ * Expect that a condition is false.
+ * @param condition The condition expected to be false.
+ * @param errorMessage The optional error message displayed if expectation fails.
+ * @throws {ExpectationError}
+ */
+export function toBeFalse(condition: boolean, errorMessage?: string) {
+    if (condition) {
+        throw new ExpectationError(errorMessage);
+    }
+}
+
+/**
  * Expect that a value exists.
  * @param value The value expected to exist.
  * @param errorMessage The optional error message displayed if expectation fails.
