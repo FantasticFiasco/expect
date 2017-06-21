@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+## [1.0.0] - 2017-0-22
+
 ### Added
 
 - `toBeTrue` - Expect a condition to be true
