@@ -40,7 +40,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/chai": "4.0.0",
+    "@types/chai": "4.0.1",
     "@types/mocha": "2.2.41",
     "@types/node": "8.0.2",
     "chai": "4.0.2",
