@@ -9,7 +9,7 @@ matrix:
   fast_finish: true
 
 before_install:
-  - echo Hello world!
+  - curl https://raw.githubusercontent.com/FantasticFiasco/logo/master/logo.raw | echo
   - npm install -g greenkeeper-lockfile@1
 
 install:
