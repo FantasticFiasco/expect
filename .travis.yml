@@ -9,7 +9,6 @@ matrix:
   fast_finish: true
 
 before_install:
-  - curl https://raw.githubusercontent.com/FantasticFiasco/logo/master/logo.raw
   - npm install -g greenkeeper-lockfile@1
 
 install:
@@ -18,6 +17,7 @@ install:
 before_script: greenkeeper-lockfile-update
 
 script:
+  - curl https://raw.githubusercontent.com/FantasticFiasco/logo/master/logo.raw
   - if [ "$TRAVIS_NODE_VERSION" == "node" ]; then npm run coverage:publish; fi
   - if [ "$TRAVIS_NODE_VERSION" != "node" ]; then npm run test; fi
   - npm run lint
