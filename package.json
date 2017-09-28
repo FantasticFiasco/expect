@@ -43,7 +43,7 @@
     "@types/mocha": "2.2.43",
     "@types/node": "8.0.31",
     "chai": "4.1.2",
-    "coveralls": "2.13.1",
+    "coveralls": "2.13.2",
     "cpx": "1.5.0",
     "istanbul": "0.4.5",
     "mocha": "3.5.3",
