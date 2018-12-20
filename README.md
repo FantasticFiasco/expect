@@ -33,6 +33,8 @@ function update(person) {
 
 ```sh
 npm install @fantasticfiasco/expect
+# or
+yarn add @fantasticfiasco/expect
 ```
 
 ## API
