@@ -1,8 +1,8 @@
 language: node_js
 
 node_js:
-  - "node"  # Current - Latest features
-  - "10"    # LTS - Recommended for most users
+  - node    # Current - Latest features
+  - '10'    # LTS - Recommended for most users
 
 matrix:
   fast_finish: true
@@ -15,3 +15,12 @@ script:
   - if [ "$TRAVIS_NODE_VERSION" == "node" ]; then yarn run coverage:publish; fi
   - if [ "$TRAVIS_NODE_VERSION" != "node" ]; then yarn run test; fi
   - yarn run lint
+
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: mattias.kindborg@gmail.com
+  api_key:
+    secure: oPpuhVrECIMWoR/WE+OjiQuAHFZ4buHL7qm13yrEIjlVgzhCOfrJt4Hkgw427pPQzDCcCwftjXLlZPO2AOf4obHSZeV3Ii3t4tJu1qhgM+oWW4VT1KL6/BBOFOh1slmK0ni9ZTwfPsA56zVu0qvD6xu+UiFDT8oO7pPYlMaBKmGAC/iWHrjj9uu5zdeQHM4gcBXJYWMMFB6m7xc2t8v0ajyU6bccz6RzqRQK8fZHFDKbmnHIfxK/0W76HQlK0og7GHi5QyjGlEMN2TFHa7O5UWAE21mDU1qMGwXYj9YhjsXgFHLMTX4HY99tTJwLbXyUeXL70yH8IFjnr4Id/6PvohYERdid6+pw7ic/7CxOHD8NPE6MMhbB+8byrr3rOR048zO0VlIz+k6NGTXfllNismbbVFm4QLLLBKv2nknto5ErUmmMpDMk3S2nItRXfdtlxFOpf4v1K982k5ktAmUZCQaCwj1Yd8bxNcAsXGkJgT3nHcmeu+r6o1acsuzIWuxyR5hbvDlCaqPnVXHgwAgIn7ImuuGUHeKhHKxrtwZb+P9bZ5EgSgJrskaUHfPV7swYJ4vsEyi+q0Ue6zFCei6frMwuKLVjFjGnd2YCbvTAO0T4FVNI6JlSM2TJbJeSZfz/ZEOXUnE5Bks23gP67L0Tc53cR7L2rKSrIBGQRl/wDt8=
+  on:
+    tags: true
