@@ -5,7 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
-## [1.0.0] - 2017-0-22
+### :policeman: Security
+
+- Security vulnerability in transient dependency `sshpk`
+
+## [1.0.0] - 2017-06-22
 
 ### Added
 
