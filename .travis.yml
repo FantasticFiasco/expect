@@ -25,7 +25,7 @@ deploy:
   #   on:
   #     tags: true
   - provider: releases
-    name: Temp release
+    name: Release $TRAVIS_TAG
     api_key:
       secure: azBrtMiMsakr1E3NuePq3dcBWKE4U1Q/UI0pRP0YQ9V98h3nHneH41Oi/l3mwvHBuFolgvAd+5llpRk/2i0hY8SoZG9EeP15PsBNasUzM+XNI/EnIPiPj2oBpxZ+QreXER3yRyZ4sLJMRhsBfehdxSMIsNp21QK+SAVeBZuhibHwHkym4euXnPUiUTEOfnQ0JgMUpC5Y5ErtT+V1xPsNbR+w5OCOtI/NbVlWi4ipFNTJZYUOYajLbsb+yyWaFWQco7w05F/pW0BCaBn2Ko3yCk1tDV2f5iUZ8gYQHHAA96lv96iibYJGmu30JkVsLPnleaNVE8wkWZ+Ju3jj+EYJgHqFzquhO/CUFzfUw+xN/ECE/wXQRDmkfAu3Va9soEGSb4xS/TnAsdj3pIvg0rJeQCx12jW58NC96hlTGPktyczJsPUcsAB9YJ4oFwDdsILWRUTMCQ82Fi1N5TQu9WOsS2wJYTv0xo5+uxld9xmUPg5KOUKvsf8RKOD6oANPkn++dSFqXK19p49mJvomm3RRN4GiTdaxZWXHbYCfPHz6gmV+feZzjIaN9zrdbS5se4/K/HcAqt134GCRd9qh71YZ5/Xro8lHUnkcCp8LA65PWKfwu0W/IS9PBDWRXHG0XaKgvVVjIoZhQ819wkbYpxS4k0c5lF7/459hdmUHnnc5h10=
     on:
