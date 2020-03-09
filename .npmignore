@@ -1,29 +1,11 @@
-## Source code
-src
-test
-.gitattributes
-
-## Demo application
-demo-application
-
-## Visual Studio Code settings
-.vscode
-
-## Documentation
-doc
-
-## NPM
-.npmignore
-*.tgz
-
-## Build files
-.travis.yml
+.github/
+.vscode/
+coverage/
+doc/
+src/
+test/
+.*
+renovate.json
 tsconfig.json
 tslint.json
-
-## Tests
-**/*.spec.js
-**/*.spec.d.ts
-
-## Code coverage
-coverage
+*.tgz
