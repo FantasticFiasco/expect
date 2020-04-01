@@ -29,7 +29,6 @@
     "postbuild": "copyfiles --up 1 \"./src/**/*.{d.ts,js}\" ./lib/",
     "test": "jest",
     "lint": "tslint \"./src/**/*.ts\" --exclude \"./**/*.d.ts\"",
-    "precoverage": "yarn build",
     "coverage": "jest --coverage && coveralls < coverage/lcov.info",
     "prepack": "yarn test && yarn lint"
   },
