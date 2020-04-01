@@ -88,8 +88,6 @@ describe('expect', () => {
             toBeAlphanumeric('9z');
         });
 
-        // Dummy
-
         test('should fail if expectation is unfulfilled', () => {
             expect(() => toBeAlphanumeric('', errorMessage)).toThrow(ExpectationError);
             expect(() => toBeAlphanumeric(' ', errorMessage)).toThrow(ExpectationError);
