@@ -13,27 +13,27 @@ describe('expect', () => {
     const errorMessage = 'Some error message';
 
     describe('#toBeTrue', () => {
-        it('should pass if expectation is fulfilled', () => {
+        test('should pass if expectation is fulfilled', () => {
             toBeTrue(true);
         });
 
-        it('should fail if expectation is unfulfilled', () => {
-            (() => toBeTrue(false, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+        test('should fail if expectation is unfulfilled', () => {
+            expect(() => toBeTrue(false, errorMessage)).toThrow(ExpectationError);
         });
     });
 
     describe('#toBeFalse', () => {
-        it('should pass if expectation is fulfilled', () => {
+        test('should pass if expectation is fulfilled', () => {
             toBeFalse(false);
         });
 
-        it('should fail if expectation is unfulfilled', () => {
-            (() => toBeFalse(true, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+        test('should fail if expectation is unfulfilled', () => {
+            expect(() => toBeFalse(true, errorMessage)).toThrow(ExpectationError);
         });
     });
 
     describe('#toExist', () => {
-        it('should pass if expectation is fulfilled', () => {
+        test('should pass if expectation is fulfilled', () => {
             toExist(true);
             toExist(-1);
             toExist(1);
@@ -41,18 +41,18 @@ describe('expect', () => {
             toExist(new Object());
         });
 
-        it('should fail if expectation is unfulfilled', () => {
-            (() => toExist(false, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toExist(null, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toExist(undefined, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toExist(0, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toExist(NaN, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toExist('', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+        test('should fail if expectation is unfulfilled', () => {
+            expect(() => toExist(false, errorMessage)).toThrow(ExpectationError);
+            expect(() => toExist(null, errorMessage)).toThrow(ExpectationError);
+            expect(() => toExist(undefined, errorMessage)).toThrow(ExpectationError);
+            expect(() => toExist(0, errorMessage)).toThrow(ExpectationError);
+            expect(() => toExist(NaN, errorMessage)).toThrow(ExpectationError);
+            expect(() => toExist('', errorMessage)).toThrow(ExpectationError);
         });
     });
 
     describe('#toNotExist', () => {
-        it('should pass if expectation is fulfilled', () => {
+        test('should pass if expectation is fulfilled', () => {
             toNotExist(false);
             toNotExist(null);
             toNotExist(undefined);
@@ -61,17 +61,17 @@ describe('expect', () => {
             toNotExist('');
         });
 
-        it('should fail if expectation is unfulfilled', () => {
-            (() => toNotExist(true, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toNotExist(-1, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toNotExist(1, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toNotExist('a', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toNotExist(new Object(), errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+        test('should fail if expectation is unfulfilled', () => {
+            expect(() => toNotExist(true, errorMessage)).toThrow(ExpectationError);
+            expect(() => toNotExist(-1, errorMessage)).toThrow(ExpectationError);
+            expect(() => toNotExist(1, errorMessage)).toThrow(ExpectationError);
+            expect(() => toNotExist('a', errorMessage)).toThrow(ExpectationError);
+            expect(() => toNotExist(new Object(), errorMessage)).toThrow(ExpectationError);
         });
     });
 
     describe('#toBeAlphanumeric', () => {
-        it('should pass if expectation is fulfilled', () => {
+        test('should pass if expectation is fulfilled', () => {
             toBeAlphanumeric('0');
             toBeAlphanumeric('9');
             toBeAlphanumeric('a');
@@ -88,32 +88,32 @@ describe('expect', () => {
             toBeAlphanumeric('9z');
         });
 
-        it('should fail if expectation is unfulfilled', () => {
-            (() => toBeAlphanumeric('', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toBeAlphanumeric(' ', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toBeAlphanumeric(' 0', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toBeAlphanumeric('0 ', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toBeAlphanumeric(' 9', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toBeAlphanumeric('9 ', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toBeAlphanumeric(' a', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toBeAlphanumeric('a ', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toBeAlphanumeric(' z', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toBeAlphanumeric('z ', errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+        test('should fail if expectation is unfulfilled', () => {
+            expect(() => toBeAlphanumeric('', errorMessage)).toThrow(ExpectationError);
+            expect(() => toBeAlphanumeric(' ', errorMessage)).toThrow(ExpectationError);
+            expect(() => toBeAlphanumeric(' 0', errorMessage)).toThrow(ExpectationError);
+            expect(() => toBeAlphanumeric('0 ', errorMessage)).toThrow(ExpectationError);
+            expect(() => toBeAlphanumeric(' 9', errorMessage)).toThrow(ExpectationError);
+            expect(() => toBeAlphanumeric('9 ', errorMessage)).toThrow(ExpectationError);
+            expect(() => toBeAlphanumeric(' a', errorMessage)).toThrow(ExpectationError);
+            expect(() => toBeAlphanumeric('a ', errorMessage)).toThrow(ExpectationError);
+            expect(() => toBeAlphanumeric(' z', errorMessage)).toThrow(ExpectationError);
+            expect(() => toBeAlphanumeric('z ', errorMessage)).toThrow(ExpectationError);
         });
     });
 
     describe('#toBeCharCodes', () => {
-        it('should pass if expectation is fulfilled', () => {
+        test('should pass if expectation is fulfilled', () => {
             toBeCharCodes(String.fromCharCode(65), 65, 90);
             toBeCharCodes(String.fromCharCode(90), 65, 90);
             toBeCharCodes(String.fromCharCode(90, 90), 65, 90);
         });
 
-        it('should fail if expectation is unfulfilled', () => {
-            (() => toBeCharCodes(String.fromCharCode(64), 65, 90, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toBeCharCodes(String.fromCharCode(91), 65, 90, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toBeCharCodes(String.fromCharCode(65, 91), 65, 90, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
-            (() => toBeCharCodes(String.fromCharCode(64, 90), 65, 90, errorMessage)).should.throw(ExpectationError).with.property('message', errorMessage);
+        test('should fail if expectation is unfulfilled', () => {
+            expect(() => toBeCharCodes(String.fromCharCode(64), 65, 90, errorMessage)).toThrow(ExpectationError);
+            expect(() => toBeCharCodes(String.fromCharCode(91), 65, 90, errorMessage)).toThrow(ExpectationError);
+            expect(() => toBeCharCodes(String.fromCharCode(65, 91), 65, 90, errorMessage)).toThrow(ExpectationError);
+            expect(() => toBeCharCodes(String.fromCharCode(64, 90), 65, 90, errorMessage)).toThrow(ExpectationError);
         });
     });
 });
