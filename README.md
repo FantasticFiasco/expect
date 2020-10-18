@@ -1,6 +1,6 @@
 # @fantasticfiasco/expect
 
-[![Build Status](https://travis-ci.org/FantasticFiasco/expect.svg?branch=master)](https://travis-ci.org/FantasticFiasco/expect)
+[![Build Status](https://travis-ci.com/FantasticFiasco/expect.svg?branch=master)](https://travis-ci.com/FantasticFiasco/expect)
 [![Coverage Status](https://coveralls.io/repos/github/FantasticFiasco/expect/badge.svg)](https://coveralls.io/github/FantasticFiasco/expect)
 [![npm version](https://img.shields.io/npm/v/@fantasticfiasco/expect.svg)](https://www.npmjs.com/package/@fantasticfiasco/expect)
 [![SemVer compatible](https://img.shields.io/badge/%E2%9C%85-SemVer%20compatible-blue)](https://semver.org/)
