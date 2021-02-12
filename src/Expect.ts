@@ -79,3 +79,16 @@ export function toBeCharCodes(value: string, minCharCode: number, maxCharCode: n
         }
     }
 }
+
+/**
+ * Expect a value that is an Email.
+ * @param email The value expected to be an Email.
+ * @param errorMessage The optional error message displayed if expectation fails.
+ * @throws {ExpectationError}
+ */
+export function isEmail(email: string, errorMessage?: string) {
+    const rg = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (rg.test(String(email).toLowerCase())) {
+        throw new ExpectationError(errorMessage);
+    }
+}
