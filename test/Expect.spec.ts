@@ -7,7 +7,7 @@ import {
     toExist,
     toNotExist,
     toBeEmail
-} from './../src';
+} from '../src';
 
 describe('expect', () => {
 
@@ -125,8 +125,6 @@ describe('expect', () => {
             toBeEmail('email@subdomain.example.com')
             toBeEmail('firstname+lastname@example.com')
             toBeEmail('email@123.123.123.123')
-            toBeEmail('email@[123.123.123.123]')
-            toBeEmail('"email"@example.com')
             toBeEmail('1234567890@example.com')
             toBeEmail('email@example-one.com')
             toBeEmail('_______@example.com')
@@ -138,6 +136,8 @@ describe('expect', () => {
         })
 
         test('should fail if expectation is unfulfilled', () => {
+            expect(() => toBeEmail('email@[123.123.123.123]')).toThrow(ExpectationError);
+            expect(() => toBeEmail('"email"@example.com')).toThrow(ExpectationError);
             expect(() => toBeEmail('plainaddress')).toThrow(ExpectationError);
             expect(() => toBeEmail('#@%^%#$@#$@#.com')).toThrow(ExpectationError);
             expect(() => toBeEmail('@example.com')).toThrow(ExpectationError);
