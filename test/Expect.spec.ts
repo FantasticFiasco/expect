@@ -135,10 +135,6 @@ describe('expect', () => {
             toBeEmail('email@example.museum')
             toBeEmail('email@example.co.jp')
             toBeEmail('firstname-lastname@example.com')
-            toBeEmail('much.”more\ unusual”@example.com')
-            toBeEmail('very.unusual.”@”.unusual.com@example.com')
-            toBeEmail('あいうえお@example.com')
-            toBeEmail('very.”(),:;<>[]”.VERY.”very@\\ "very”.unusual@strange.example.com')
         })
 
         test('should fail if expectation is unfulfilled', () => {
