@@ -130,12 +130,14 @@ describe('expect', () => {
             toBeEmail('1234567890@example.com')
             toBeEmail('email@example-one.com')
             toBeEmail('_______@example.com')
+            toBeEmail('email@example.web')
             toBeEmail('email@example.name')
             toBeEmail('email@example.museum')
             toBeEmail('email@example.co.jp')
             toBeEmail('firstname-lastname@example.com')
             toBeEmail('much.”more\ unusual”@example.com')
             toBeEmail('very.unusual.”@”.unusual.com@example.com')
+            toBeEmail('あいうえお@example.com')
             toBeEmail('very.”(),:;<>[]”.VERY.”very@\\ "very”.unusual@strange.example.com')
         })
 
@@ -149,12 +151,9 @@ describe('expect', () => {
             expect(() => toBeEmail('.email@example.com')).toThrow(ExpectationError);
             expect(() => toBeEmail('email.@example.com')).toThrow(ExpectationError);
             expect(() => toBeEmail('email..email@example.com')).toThrow(ExpectationError);
-            expect(() => toBeEmail('あいうえお@example.com')).toThrow(ExpectationError);
             expect(() => toBeEmail('email@example.com (Joe Smith)')).toThrow(ExpectationError);
             expect(() => toBeEmail('email@example')).toThrow(ExpectationError);
             expect(() => toBeEmail('email@-example.com')).toThrow(ExpectationError);
-            expect(() => toBeEmail('email@example.web')).toThrow(ExpectationError);
-            expect(() => toBeEmail('email@111.222.333.44444')).toThrow(ExpectationError);
             expect(() => toBeEmail('email@example..com')).toThrow(ExpectationError);
             expect(() => toBeEmail('Abc..123@example.com')).toThrow(ExpectationError);
             expect(() => toBeEmail('”(),:;<>[\]@example.com')).toThrow(ExpectationError);
