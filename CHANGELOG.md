@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+## [1.1.0] - 2021-02-14
+
 ### :zap: Added
 
 - `toBeEmail` - Expect a value to be an email (contributed by [@alandev2](https://github.com/alandev2))
