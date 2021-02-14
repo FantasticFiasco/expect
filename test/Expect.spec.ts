@@ -5,8 +5,9 @@ import {
     toBeFalse,
     toBeTrue,
     toExist,
-    toNotExist
-} from './../src';
+    toNotExist,
+    toBeEmail
+} from '../src';
 
 describe('expect', () => {
 
@@ -116,4 +117,44 @@ describe('expect', () => {
             expect(() => toBeCharCodes(String.fromCharCode(64, 90), 65, 90, errorMessage)).toThrow(ExpectationError);
         });
     });
+
+    describe('#toBeEmail', () => {
+        test('should pass if expectation is fulfilled', () => {
+            toBeEmail('email@example.com')
+            toBeEmail('firstname.lastname@example.com')
+            toBeEmail('email@subdomain.example.com')
+            toBeEmail('firstname+lastname@example.com')
+            toBeEmail('email@123.123.123.123')
+            toBeEmail('1234567890@example.com')
+            toBeEmail('email@example-one.com')
+            toBeEmail('_______@example.com')
+            toBeEmail('email@example.web')
+            toBeEmail('email@example.name')
+            toBeEmail('email@example.museum')
+            toBeEmail('email@example.co.jp')
+            toBeEmail('firstname-lastname@example.com')
+        })
+
+        test('should fail if expectation is unfulfilled', () => {
+            expect(() => toBeEmail('email@[123.123.123.123]')).toThrow(ExpectationError);
+            expect(() => toBeEmail('"email"@example.com')).toThrow(ExpectationError);
+            expect(() => toBeEmail('plainaddress')).toThrow(ExpectationError);
+            expect(() => toBeEmail('#@%^%#$@#$@#.com')).toThrow(ExpectationError);
+            expect(() => toBeEmail('@example.com')).toThrow(ExpectationError);
+            expect(() => toBeEmail('Joe Smith <email@example.com>')).toThrow(ExpectationError);
+            expect(() => toBeEmail('email.example.com')).toThrow(ExpectationError);
+            expect(() => toBeEmail('email@example@example.com')).toThrow(ExpectationError);
+            expect(() => toBeEmail('.email@example.com')).toThrow(ExpectationError);
+            expect(() => toBeEmail('email.@example.com')).toThrow(ExpectationError);
+            expect(() => toBeEmail('email..email@example.com')).toThrow(ExpectationError);
+            expect(() => toBeEmail('email@example.com (Joe Smith)')).toThrow(ExpectationError);
+            expect(() => toBeEmail('email@example')).toThrow(ExpectationError);
+            expect(() => toBeEmail('email@-example.com')).toThrow(ExpectationError);
+            expect(() => toBeEmail('email@example..com')).toThrow(ExpectationError);
+            expect(() => toBeEmail('Abc..123@example.com')).toThrow(ExpectationError);
+            expect(() => toBeEmail('”(),:;<>[\]@example.com')).toThrow(ExpectationError);
+            expect(() => toBeEmail('just”not”right@example.com')).toThrow(ExpectationError);
+            expect(() => toBeEmail('this\ is"really"not\allowed@example.com')).toThrow(ExpectationError);
+        })
+    })
 });
