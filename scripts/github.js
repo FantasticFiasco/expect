@@ -23,7 +23,7 @@ const createRelease = async (githubToken, owner, repo, tagName, version) => {
         owner,
         repo,
         tag_name: tagName,
-        name: `Release v${version}`,
+        name: `Release ${version}`,
         body: 'TODO',
         draft: true,
     });
