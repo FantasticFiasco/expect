@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+### :zap: Added
+
+- `toBeEmail` - Expect a value to be an email (contributed by [@alandev2](https://github.com/alandev2))
+
 ## [1.0.4] - 2019-12-27
 
 ### :policeman: Security
@@ -34,7 +38,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [1.0.0] - 2017-06-22
 
-### Added
+### :zap: Added
 
 - `toBeTrue` - Expect a condition to be true
 - `toBeFalse` - Expect a condition to be false
