@@ -81,15 +81,15 @@ export function toBeCharCodes(value: string, minCharCode: number, maxCharCode: n
 }
 
 /**
- * Expect a value that is an email.
+ * Expect a value to be an email.
  * @param email The value expected to be an email.
  * @param errorMessage The optional error message displayed if expectation fails.
  * @throws {ExpectationError}
  */
 export function toBeEmail(email: string, errorMessage?: string) {
-    const rg = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
-    const validEmail = String(email).match(rg);
-    if(!validEmail || (validEmail[0] !== email)) {
+    const regex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
+    const match = email.match(regex);
+    if(match === null || (match[0] !== email)) {
         throw new ExpectationError(errorMessage);
     }
 }
