@@ -28,8 +28,9 @@
     "build": "tsc",
     "postbuild": "copyfiles --up 1 \"./src/**/*.{d.ts,js}\" ./lib/",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "lint": "tslint \"./src/**/*.ts\" --exclude \"./**/*.d.ts\"",
-    "coverage": "jest --coverage && coveralls < coverage/lcov.info",
+
     "prepack": "yarn test && yarn lint"
   },
   "dependencies": {},
@@ -37,7 +38,6 @@
     "@types/jest": "26.0.20",
     "@types/node": "14.14.27",
     "copyfiles": "2.4.1",
-    "coveralls": "3.1.0",
     "jest": "26.6.3",
     "rimraf": "3.0.2",
     "ts-jest": "26.5.1",
