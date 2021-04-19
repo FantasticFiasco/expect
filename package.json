@@ -52,7 +52,7 @@
     "js-yaml": ">=3.13.1",
     "lodash": ">=4.17.13",
     "minimist": ">=1.2.2",
-    "node-notifier": ">=8.0.1",
+    "node-notifier": "9.0.1",
     "sshpk": ">=1.13.2"
   }
 }
