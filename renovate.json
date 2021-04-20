@@ -1,5 +1,12 @@
 {
-  "extends": [
-    "github>FantasticFiasco/renovate-config"
+  "extends": ["github>FantasticFiasco/renovate-config"],
+  "ignoreDeps": [
+    "diff",
+    "handlebars",
+    "js-yaml",
+    "lodash",
+    "minimist",
+    "node-notifier",
+    "sshpk"
   ]
 }
