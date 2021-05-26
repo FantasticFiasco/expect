@@ -8,5 +8,11 @@
     "minimist",
     "node-notifier",
     "sshpk"
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["jest"],
+      "groupName": "Jest packages"
+    }
   ]
 }
