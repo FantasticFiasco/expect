@@ -7,13 +7,5 @@
     "**/npm-debug.log": true
   },
   "tslint.exclude": "**/test/**/*.ts",
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "spellright.language": [
-    "English (American)"
-  ],
-  "spellright.documentTypes": [
-    "markdown",
-    "latex",
-    "plaintext"
-  ]
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
