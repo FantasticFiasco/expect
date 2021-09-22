@@ -39,7 +39,7 @@
     "@types/jest": "27.0.1",
     "@types/node": "14.17.15",
     "copyfiles": "2.4.1",
-    "inquirer": "8.1.2",
+    "inquirer": "8.1.5",
     "jest": "27.1.0",
     "rimraf": "3.0.2",
     "ts-jest": "27.0.5",
