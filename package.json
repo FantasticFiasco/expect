@@ -55,6 +55,7 @@
     "minimist": ">=1.2.2",
     "node-notifier": ">=8.0.1",
     "path-parse": ">=1.0.7",
-    "sshpk": ">=1.13.2"
+    "sshpk": ">=1.13.2",
+    "tmpl": ">=1.0.5"
   }
 }
