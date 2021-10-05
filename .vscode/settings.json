@@ -1,11 +1,20 @@
 // Place your settings in this file to overwrite default and user settings.
 {
   "files.exclude": {
-    "**/*.js": {"when": "$(basename).ts"},
-    "**/*.d.ts": {"when": "$(basename).ts"},
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
+    "**/*.d.ts": {
+      "when": "$(basename).ts"
+    },
     "**/*.js.map": true,
     "**/npm-debug.log": true
   },
   "tslint.exclude": "**/test/**/*.ts",
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }

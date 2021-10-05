@@ -24,16 +24,13 @@
   },
   "scripts": {
     "clean": "rimraf \"./+(src|test)/**/*.+(d.ts|js|js.map)\" ./lib ./coverage",
-    "prebuild": "yarn clean",
-    "build": "tsc",
-    "postbuild": "copyfiles --up 1 \"./src/**/*.{d.ts,js}\" ./lib/",
+    "build": "yarn clean && tsc && copyfiles --up 1 \"./src/**/*.{d.ts,js}\" ./lib/",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "lint": "tslint \"./src/**/*.ts\" --exclude \"./**/*.d.ts\"",
     "prepack": "yarn test && yarn lint",
     "release": "node ./scripts/release.js"
   },
-  "dependencies": {},
   "devDependencies": {
     "@octokit/rest": "18.10.0",
     "@types/jest": "27.0.2",
@@ -57,5 +54,6 @@
     "path-parse": ">=1.0.7",
     "sshpk": ">=1.13.2",
     "tmpl": ">=1.0.5"
-  }
+  },
+  "packageManager": "yarn@3.0.2"
 }
