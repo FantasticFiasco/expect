@@ -6,7 +6,7 @@ import { ExpectationError } from './ExpectationError';
  * @param errorMessage The optional error message displayed if expectation fails.
  * @throws {ExpectationError}
  */
-export function toBeTrue(condition: boolean, errorMessage?: string) {
+export function toBeTrue(condition: boolean, errorMessage?: string): void {
     if (!condition) {
         throw new ExpectationError(errorMessage);
     }
@@ -18,7 +18,7 @@ export function toBeTrue(condition: boolean, errorMessage?: string) {
  * @param errorMessage The optional error message displayed if expectation fails.
  * @throws {ExpectationError}
  */
-export function toBeFalse(condition: boolean, errorMessage?: string) {
+export function toBeFalse(condition: boolean, errorMessage?: string): void {
     if (condition) {
         throw new ExpectationError(errorMessage);
     }
@@ -30,7 +30,7 @@ export function toBeFalse(condition: boolean, errorMessage?: string) {
  * @param errorMessage The optional error message displayed if expectation fails.
  * @throws {ExpectationError}
  */
-export function toExist<T>(value: T, errorMessage?: string) {
+export function toExist<T>(value: T, errorMessage?: string): void {
     if (!value) {
         throw new ExpectationError(errorMessage);
     }
@@ -42,7 +42,7 @@ export function toExist<T>(value: T, errorMessage?: string) {
  * @param errorMessage The optional error message displayed if expectation fails.
  * @throws {ExpectationError}
  */
-export function toNotExist<T>(value: T, errorMessage?: string) {
+export function toNotExist<T>(value: T, errorMessage?: string): void {
     if (value) {
         throw new ExpectationError(errorMessage);
     }
@@ -54,7 +54,7 @@ export function toNotExist<T>(value: T, errorMessage?: string) {
  * @param errorMessage The optional error message displayed if expectation fails.
  * @throws {ExpectationError}
  */
-export function toBeAlphanumeric(value: string, errorMessage?: string) {
+export function toBeAlphanumeric(value: string, errorMessage?: string): void {
     if (!alphanumeric.test(value)) {
         throw new ExpectationError(errorMessage);
     }
@@ -70,7 +70,7 @@ const alphanumeric = /^[0-9A-Z]+$/i;
  * @param errorMessage The optional error message displayed if expectation fails.
  * @throws {ExpectationError}
  */
-export function toBeCharCodes(value: string, minCharCode: number, maxCharCode: number, errorMessage?: string) {
+export function toBeCharCodes(value: string, minCharCode: number, maxCharCode: number, errorMessage?: string): void {
     for (let index = 0; index < value.length; index++) {
         const charCode = value.charCodeAt(index);
 
@@ -86,7 +86,7 @@ export function toBeCharCodes(value: string, minCharCode: number, maxCharCode: n
  * @param errorMessage The optional error message displayed if expectation fails.
  * @throws {ExpectationError}
  */
-export function toBeEmail(email: string, errorMessage?: string) {
+export function toBeEmail(email: string, errorMessage?: string): void {
     const regex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
     const match = email.match(regex);
     if(match === null || (match[0] !== email)) {
