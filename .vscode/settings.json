@@ -15,5 +15,6 @@
     "**/.yarn": true,
     "**/.pnp.*": true
   },
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "eslint.nodePath": ".yarn/sdks"
 }
