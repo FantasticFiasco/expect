@@ -10,11 +10,11 @@
     "**/*.js.map": true,
     "**/npm-debug.log": true
   },
-  "tslint.exclude": "**/test/**/*.ts",
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
   },
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "eslint.nodePath": ".yarn/sdks"
 }

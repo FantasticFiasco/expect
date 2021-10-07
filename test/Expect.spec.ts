@@ -152,9 +152,9 @@ describe('expect', () => {
             expect(() => toBeEmail('email@-example.com')).toThrow(ExpectationError);
             expect(() => toBeEmail('email@example..com')).toThrow(ExpectationError);
             expect(() => toBeEmail('Abc..123@example.com')).toThrow(ExpectationError);
-            expect(() => toBeEmail('”(),:;<>[\]@example.com')).toThrow(ExpectationError);
+            expect(() => toBeEmail('”(),:;<>[]@example.com')).toThrow(ExpectationError);
             expect(() => toBeEmail('just”not”right@example.com')).toThrow(ExpectationError);
-            expect(() => toBeEmail('this\ is"really"not\allowed@example.com')).toThrow(ExpectationError);
+            expect(() => toBeEmail('this is"really"notallowed@example.com')).toThrow(ExpectationError);
         })
     })
 });
