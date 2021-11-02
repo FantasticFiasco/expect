@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ### :syringe: Changed
 
-- [BREAKING CHANGE] Deprecate Node.js 13 and below
+- [BREAKING CHANGE] Deprecate Node.js 15 and below
 
 ## [1.1.0] - 2021-02-14
 
