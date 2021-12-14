@@ -434,7 +434,7 @@ __metadata:
   dependencies:
     "@octokit/rest": 18.12.0
     "@types/jest": 27.0.3
-    "@types/node": 16.11.7
+    "@types/node": 16.11.12
     "@typescript-eslint/eslint-plugin": 5.4.0
     "@typescript-eslint/parser": 5.4.0
     copyfiles: 2.4.1
@@ -1024,10 +1024,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.11.7":
-  version: 16.11.7
-  resolution: "@types/node@npm:16.11.7"
-  checksum: 2706403e6efc4aa40fdce8f0b5d9884d5600c3c8610aedc7fa5e7e298d30366f7e8b7296028d52898dca3edef4c3e827b03bf20952c4780f13fa4e79864f7a86
+"@types/node@npm:16.11.12":
+  version: 16.11.12
+  resolution: "@types/node@npm:16.11.12"
+  checksum: a3feb346d61a56f5a137c29bb8c63cfa3cc02e184b9dffdc18ef1528dcce55596e570575215a2e39e6ce69343eeb2a5ba71c271938f1dc8db4cc393902855412
   languageName: node
   linkType: hard
 
