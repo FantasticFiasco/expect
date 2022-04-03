@@ -4917,7 +4917,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/json5-npm-2.2.0-da49dc7cb5-e88fc5274b.zip/node_modules/json5/",\
           "packageDependencies": [\
             ["json5", "npm:2.2.0"],\
-            ["minimist", "npm:1.2.5"]\
+            ["minimist", "npm:1.2.6"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5148,10 +5148,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["minimist", [\
-        ["npm:1.2.5", {\
-          "packageLocation": "./.yarn/cache/minimist-npm-1.2.5-ced0e1f617-86706ce5b3.zip/node_modules/minimist/",\
+        ["npm:1.2.6", {\
+          "packageLocation": "./.yarn/cache/minimist-npm-1.2.6-f4cee4b4af-d15428cd1e.zip/node_modules/minimist/",\
           "packageDependencies": [\
-            ["minimist", "npm:1.2.5"]\
+            ["minimist", "npm:1.2.6"]\
           ],\
           "linkType": "HARD"\
         }]\
