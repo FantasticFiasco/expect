@@ -40,7 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:5.4.0"],\
             ["copyfiles", "npm:2.4.1"],\
             ["eslint", "npm:8.3.0"],\
-            ["inquirer", "npm:8.2.2"],\
+            ["inquirer", "npm:8.2.4"],\
             ["jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:27.5.1"],\
             ["rimraf", "npm:3.0.2"],\
             ["ts-jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:27.1.4"],\
@@ -1074,7 +1074,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:5.4.0"],\
             ["copyfiles", "npm:2.4.1"],\
             ["eslint", "npm:8.3.0"],\
-            ["inquirer", "npm:8.2.2"],\
+            ["inquirer", "npm:8.2.4"],\
             ["jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:27.5.1"],\
             ["rimraf", "npm:3.0.2"],\
             ["ts-jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:27.1.4"],\
@@ -3975,10 +3975,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["inquirer", [\
-        ["npm:8.2.2", {\
-          "packageLocation": "./.yarn/cache/inquirer-npm-8.2.2-964bc6fd57-69a2cf32f5.zip/node_modules/inquirer/",\
+        ["npm:8.2.4", {\
+          "packageLocation": "./.yarn/cache/inquirer-npm-8.2.4-a2a5fb3187-dfcb6529d3.zip/node_modules/inquirer/",\
           "packageDependencies": [\
-            ["inquirer", "npm:8.2.2"],\
+            ["inquirer", "npm:8.2.4"],\
             ["ansi-escapes", "npm:4.3.2"],\
             ["chalk", "npm:4.1.2"],\
             ["cli-cursor", "npm:3.1.0"],\
@@ -3992,7 +3992,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rxjs", "npm:7.5.5"],\
             ["string-width", "npm:4.2.3"],\
             ["strip-ansi", "npm:6.0.1"],\
-            ["through", "npm:2.3.8"]\
+            ["through", "npm:2.3.8"],\
+            ["wrap-ansi", "npm:7.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
