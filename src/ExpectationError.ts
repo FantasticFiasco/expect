@@ -1,5 +1,5 @@
 /**
- * Error thrown when expextation fails.
+ * Error thrown when expectation fails.
  */
 export class ExpectationError extends Error {
 }

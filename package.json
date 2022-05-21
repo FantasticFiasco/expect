@@ -25,8 +25,8 @@
   "scripts": {
     "clean": "rimraf \"./+(src|test)/**/*.+(d.ts|js|js.map)\" ./lib ./coverage",
     "build": "yarn clean && tsc && copyfiles --up 1 \"./src/**/*.{d.ts,js}\" ./lib/",
-    "test": "jest",
-    "test:coverage": "jest --coverage",
+    "test": "yarn clean && jest",
+    "test:coverage": "yarn clean && jest --coverage",
     "lint": "eslint . --ext .ts",
     "prepack": "yarn test && yarn lint",
     "release": "node ./scripts/release.js"
