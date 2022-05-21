@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@octokit/rest": "18.12.0",
-    "@types/jest": "27.5.0",
+    "@types/jest": "27.5.1",
     "@types/node": "16.11.33",
     "@typescript-eslint/eslint-plugin": "5.25.0",
     "@typescript-eslint/parser": "5.25.0",
