@@ -1706,7 +1706,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@octokit/request-error", "npm:3.0.0"],\
             ["@octokit/types", "npm:6.31.3"],\
             ["is-plain-object", "npm:5.0.0"],\
-            ["node-fetch", "npm:3.2.0"],\
+            ["node-fetch", "npm:3.2.10"],\
             ["universal-user-agent", "npm:6.0.0"]\
           ],\
           "linkType": "HARD"\
@@ -5190,10 +5190,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["node-fetch", [\
-        ["npm:3.2.0", {\
-          "packageLocation": "./.yarn/cache/node-fetch-npm-3.2.0-43b96df788-1c809a0f64.zip/node_modules/node-fetch/",\
+        ["npm:3.2.10", {\
+          "packageLocation": "./.yarn/cache/node-fetch-npm-3.2.10-b87c28708a-e65322431f.zip/node_modules/node-fetch/",\
           "packageDependencies": [\
-            ["node-fetch", "npm:3.2.0"],\
+            ["node-fetch", "npm:3.2.10"],\
             ["data-uri-to-buffer", "npm:4.0.0"],\
             ["fetch-blob", "npm:3.1.4"],\
             ["formdata-polyfill", "npm:4.0.10"]\
