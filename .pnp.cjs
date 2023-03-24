@@ -39,7 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.5.0"],\
             ["rimraf", "npm:3.0.2"],\
             ["ts-jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.0.5"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["typescript", "patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -1160,7 +1160,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.5.0"],\
             ["rimraf", "npm:3.0.2"],\
             ["ts-jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.0.5"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["typescript", "patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -2092,7 +2092,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["natural-compare-lite", "npm:1.4.0"],\
             ["semver", "npm:7.3.7"],\
             ["tsutils", "virtual:706ac48ed168cbec54951ae8fabc7b65b53ca4ef3cc0dc8cf69d10650e747fff95a93d3e2be238c451870f3eb1330e7c3d8f104757da99644db9a5841b0884ce#npm:3.21.0"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["typescript", "patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"]\
           ],\
           "packagePeers": [\
             "@types/eslint",\
@@ -2124,7 +2124,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/typescript-estree", "virtual:2af01911b76374e7e3668a5585d7a2745477a380d9a7bf46ff08921fdae1a6c8a09e5c26d1aa28a950cb74ad8ae45970998d08dcc378166cf3940ff9f3fb15ea#npm:5.55.0"],\
             ["debug", "virtual:706ac48ed168cbec54951ae8fabc7b65b53ca4ef3cc0dc8cf69d10650e747fff95a93d3e2be238c451870f3eb1330e7c3d8f104757da99644db9a5841b0884ce#npm:4.3.4"],\
             ["eslint", "npm:8.36.0"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["typescript", "patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"]\
           ],\
           "packagePeers": [\
             "@types/eslint",\
@@ -2165,7 +2165,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:706ac48ed168cbec54951ae8fabc7b65b53ca4ef3cc0dc8cf69d10650e747fff95a93d3e2be238c451870f3eb1330e7c3d8f104757da99644db9a5841b0884ce#npm:4.3.4"],\
             ["eslint", "npm:8.36.0"],\
             ["tsutils", "virtual:706ac48ed168cbec54951ae8fabc7b65b53ca4ef3cc0dc8cf69d10650e747fff95a93d3e2be238c451870f3eb1330e7c3d8f104757da99644db9a5841b0884ce#npm:3.21.0"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["typescript", "patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"]\
           ],\
           "packagePeers": [\
             "@types/eslint",\
@@ -2205,7 +2205,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-glob", "npm:4.0.3"],\
             ["semver", "npm:7.3.7"],\
             ["tsutils", "virtual:706ac48ed168cbec54951ae8fabc7b65b53ca4ef3cc0dc8cf69d10650e747fff95a93d3e2be238c451870f3eb1330e7c3d8f104757da99644db9a5841b0884ce#npm:3.21.0"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["typescript", "patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"]\
           ],\
           "packagePeers": [\
             "@types/typescript",\
@@ -6476,7 +6476,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash.memoize", "npm:4.1.2"],\
             ["make-error", "npm:1.3.6"],\
             ["semver", "npm:7.3.5"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"],\
+            ["typescript", "patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"],\
             ["yargs-parser", "npm:21.0.1"]\
           ],\
           "packagePeers": [\
@@ -6526,7 +6526,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tsutils", "virtual:706ac48ed168cbec54951ae8fabc7b65b53ca4ef3cc0dc8cf69d10650e747fff95a93d3e2be238c451870f3eb1330e7c3d8f104757da99644db9a5841b0884ce#npm:3.21.0"],\
             ["@types/typescript", null],\
             ["tslib", "npm:1.14.1"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["typescript", "patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"]\
           ],\
           "packagePeers": [\
             "@types/typescript",\
@@ -6592,10 +6592,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["typescript", [\
-        ["patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4", {\
-          "packageLocation": "./.yarn/cache/typescript-patch-38a6667774-d7bdcf5e18.zip/node_modules/typescript/",\
+        ["patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82", {\
+          "packageLocation": "./.yarn/cache/typescript-patch-772e75d75e-b63cb742fb.zip/node_modules/typescript/",\
           "packageDependencies": [\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["typescript", "patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8345,7 +8345,7 @@ const DEFAULT_COMPRESSION_LEVEL = `mixed`;
 function toUnixTimestamp(time) {
   if (typeof time === `string` && String(+time) === time)
     return +time;
-  if (Number.isFinite(time)) {
+  if (typeof time === `number` && Number.isFinite(time)) {
     if (time < 0) {
       return Date.now() / 1e3;
     } else {
@@ -8927,7 +8927,7 @@ class ZipFS extends BasePortableFakeFS {
       resolvedP = ppath.resolve(parentP, ppath.basename(resolvedP));
       if (!resolveLastComponent || this.symlinkCount === 0)
         break;
-      const index = this.libzip.name.locate(this.zip, resolvedP.slice(1));
+      const index = this.libzip.name.locate(this.zip, resolvedP.slice(1), 0);
       if (index === -1)
         break;
       if (this.isSymbolicLink(index)) {
@@ -8952,7 +8952,7 @@ class ZipFS extends BasePortableFakeFS {
   allocateUnattachedSource(content) {
     const error = this.libzip.struct.errorS();
     const { buffer, byteLength } = this.allocateBuffer(content);
-    const source = this.libzip.source.fromUnattachedBuffer(buffer, byteLength, 0, true, error);
+    const source = this.libzip.source.fromUnattachedBuffer(buffer, byteLength, 0, 1, error);
     if (source === 0) {
       this.libzip.free(error);
       throw this.makeLibzipError(error);
@@ -8961,7 +8961,7 @@ class ZipFS extends BasePortableFakeFS {
   }
   allocateSource(content) {
     const { buffer, byteLength } = this.allocateBuffer(content);
-    const source = this.libzip.source.fromBuffer(this.zip, buffer, byteLength, 0, true);
+    const source = this.libzip.source.fromBuffer(this.zip, buffer, byteLength, 0, 1);
     if (source === 0) {
       this.libzip.free(buffer);
       throw this.makeLibzipError(this.libzip.getError(this.zip));
@@ -15395,7 +15395,7 @@ const makeInterface = (libzip) => ({
     locate: libzip.cwrap(`zip_name_locate`, `number`, [`number`, `string`, `number`])
   },
   source: {
-    fromUnattachedBuffer: libzip.cwrap(`zip_source_buffer_create`, `number`, [`number`, `number`, `number`, `number`]),
+    fromUnattachedBuffer: libzip.cwrap(`zip_source_buffer_create`, `number`, [`number`, ...number64, `number`, `number`]),
     fromBuffer: libzip.cwrap(`zip_source_buffer`, `number`, [`number`, `number`, ...number64, `number`]),
     free: libzip.cwrap(`zip_source_free`, null, [`number`]),
     keep: libzip.cwrap(`zip_source_keep`, null, [`number`]),
@@ -17292,7 +17292,7 @@ ${candidates.map((candidate) => `Not found: ${getPathForDisplay(candidate)}
       conditions: (_a = opts2.conditions) != null ? _a : defaultExportsConditions,
       readFileSyncFn: tryReadFile
     });
-    if (resolved instanceof URL) {
+    if (resolved instanceof url.URL) {
       return resolveUnqualified(npath.toPortablePath(url.fileURLToPath(resolved)), { extensions: opts2.extensions });
     } else {
       if (resolved.startsWith(`#`))
