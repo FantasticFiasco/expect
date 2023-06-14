@@ -35,7 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:5.59.8"],\
             ["copyfiles", "npm:2.4.1"],\
             ["eslint", "npm:8.41.0"],\
-            ["inquirer", "npm:9.2.6"],\
+            ["inquirer", "npm:9.2.7"],\
             ["jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.5.0"],\
             ["rimraf", "npm:3.0.2"],\
             ["ts-jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.1.0"],\
@@ -1156,7 +1156,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:5.59.8"],\
             ["copyfiles", "npm:2.4.1"],\
             ["eslint", "npm:8.41.0"],\
-            ["inquirer", "npm:9.2.6"],\
+            ["inquirer", "npm:9.2.7"],\
             ["jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.5.0"],\
             ["rimraf", "npm:3.0.2"],\
             ["ts-jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.1.0"],\
@@ -4089,10 +4089,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["inquirer", [\
-        ["npm:9.2.6", {\
-          "packageLocation": "./.yarn/cache/inquirer-npm-9.2.6-f7257ad8c1-caf3e9da66.zip/node_modules/inquirer/",\
+        ["npm:9.2.7", {\
+          "packageLocation": "./.yarn/cache/inquirer-npm-9.2.7-90b0dc8af6-5522fd4af7.zip/node_modules/inquirer/",\
           "packageDependencies": [\
-            ["inquirer", "npm:9.2.6"],\
+            ["inquirer", "npm:9.2.7"],\
             ["ansi-escapes", "npm:4.3.2"],\
             ["chalk", "npm:5.2.0"],\
             ["cli-cursor", "npm:3.1.0"],\
