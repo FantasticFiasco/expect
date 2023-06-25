@@ -23,7 +23,7 @@
     "node": ">=16.0.0"
   },
   "scripts": {
-    "clean": "rimraf \"./+(src|test)/**/*.+(d.ts|js|js.map)\" ./lib ./coverage",
+    "clean": "rimraf --glob \"./+(src|test)/**/*.+(d.ts|js|js.map)\" ./lib ./coverage",
     "build": "yarn clean && tsc && copyfiles --up 1 \"./src/**/*.{d.ts,js}\" ./lib/",
     "test": "yarn clean && jest",
     "test:coverage": "yarn clean && jest --coverage",
@@ -41,7 +41,7 @@
     "eslint": "8.43.0",
     "inquirer": "9.2.7",
     "jest": "29.5.0",
-    "rimraf": "3.0.2",
+    "rimraf": "5.0.1",
     "ts-jest": "29.1.0",
     "typescript": "5.1.3"
   },
