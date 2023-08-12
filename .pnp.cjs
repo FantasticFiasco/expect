@@ -35,7 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:6.2.1"],\
             ["copyfiles", "npm:2.4.1"],\
             ["eslint", "npm:8.46.0"],\
-            ["inquirer", "npm:9.2.9"],\
+            ["inquirer", "npm:9.2.10"],\
             ["jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.6.2"],\
             ["rimraf", "npm:5.0.1"],\
             ["ts-jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.1.1"],\
@@ -1136,7 +1136,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:6.2.1"],\
             ["copyfiles", "npm:2.4.1"],\
             ["eslint", "npm:8.46.0"],\
-            ["inquirer", "npm:9.2.9"],\
+            ["inquirer", "npm:9.2.10"],\
             ["jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.6.2"],\
             ["rimraf", "npm:5.0.1"],\
             ["ts-jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.1.1"],\
@@ -2912,10 +2912,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["cli-width", [\
-        ["npm:4.0.0", {\
-          "packageLocation": "./.yarn/cache/cli-width-npm-4.0.0-739b2261c9-1ec1231121.zip/node_modules/cli-width/",\
+        ["npm:4.1.0", {\
+          "packageLocation": "./.yarn/cache/cli-width-npm-4.1.0-c08b53be83-0a79cff2db.zip/node_modules/cli-width/",\
           "packageDependencies": [\
-            ["cli-width", "npm:4.0.0"]\
+            ["cli-width", "npm:4.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4117,15 +4117,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["inquirer", [\
-        ["npm:9.2.9", {\
-          "packageLocation": "./.yarn/cache/inquirer-npm-9.2.9-8e04a0b334-2d287e43de.zip/node_modules/inquirer/",\
+        ["npm:9.2.10", {\
+          "packageLocation": "./.yarn/cache/inquirer-npm-9.2.10-ee021f3198-7ea6b3aff7.zip/node_modules/inquirer/",\
           "packageDependencies": [\
-            ["inquirer", "npm:9.2.9"],\
+            ["inquirer", "npm:9.2.10"],\
             ["@ljharb/through", "npm:2.3.9"],\
             ["ansi-escapes", "npm:4.3.2"],\
             ["chalk", "npm:5.3.0"],\
             ["cli-cursor", "npm:3.1.0"],\
-            ["cli-width", "npm:4.0.0"],\
+            ["cli-width", "npm:4.1.0"],\
             ["external-editor", "npm:3.1.0"],\
             ["figures", "npm:5.0.0"],\
             ["lodash", "npm:4.17.21"],\
