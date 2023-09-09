@@ -30,7 +30,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@octokit/rest", "npm:20.0.1"],\
             ["@types/jest", "npm:29.5.4"],\
-            ["@types/node", "npm:18.17.12"],\
+            ["@types/node", "npm:18.17.13"],\
             ["@typescript-eslint/eslint-plugin", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:6.5.0"],\
             ["@typescript-eslint/parser", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:6.5.0"],\
             ["copyfiles", "npm:2.4.1"],\
@@ -1131,7 +1131,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@fantasticfiasco/expect", "workspace:."],\
             ["@octokit/rest", "npm:20.0.1"],\
             ["@types/jest", "npm:29.5.4"],\
-            ["@types/node", "npm:18.17.12"],\
+            ["@types/node", "npm:18.17.13"],\
             ["@typescript-eslint/eslint-plugin", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:6.5.0"],\
             ["@typescript-eslint/parser", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:6.5.0"],\
             ["copyfiles", "npm:2.4.1"],\
@@ -2014,10 +2014,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:18.17.12", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-18.17.12-b09ca14003-79f8bcca30.zip/node_modules/@types/node/",\
+        ["npm:18.17.13", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-18.17.13-4a2425e06b-d70f263b75.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:18.17.12"]\
+            ["@types/node", "npm:18.17.13"]\
           ],\
           "linkType": "HARD"\
         }]\
