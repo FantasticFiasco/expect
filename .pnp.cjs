@@ -37,7 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.50.0"],\
             ["inquirer", "npm:9.2.11"],\
             ["jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.7.0"],\
-            ["rimraf", "npm:5.0.1"],\
+            ["rimraf", "npm:5.0.4"],\
             ["ts-jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.1.1"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
@@ -1138,7 +1138,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.50.0"],\
             ["inquirer", "npm:9.2.11"],\
             ["jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.7.0"],\
-            ["rimraf", "npm:5.0.1"],\
+            ["rimraf", "npm:5.0.4"],\
             ["ts-jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.1.1"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
@@ -3837,15 +3837,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["glob", [\
-        ["npm:10.3.0", {\
-          "packageLocation": "./.yarn/cache/glob-npm-10.3.0-da3187b4ef-6fa4ac0a86.zip/node_modules/glob/",\
+        ["npm:10.3.10", {\
+          "packageLocation": "./.yarn/cache/glob-npm-10.3.10-da1ef8b112-4f2fe2511e.zip/node_modules/glob/",\
           "packageDependencies": [\
-            ["glob", "npm:10.3.0"],\
+            ["glob", "npm:10.3.10"],\
             ["foreground-child", "npm:3.1.1"],\
-            ["jackspeak", "npm:2.2.1"],\
+            ["jackspeak", "npm:2.3.6"],\
             ["minimatch", "npm:9.0.2"],\
-            ["minipass", "npm:6.0.2"],\
-            ["path-scurry", "npm:1.9.2"]\
+            ["minipass", "npm:7.0.4"],\
+            ["path-scurry", "npm:1.10.1"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -4422,10 +4422,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["jackspeak", [\
-        ["npm:2.2.1", {\
-          "packageLocation": "./.yarn/cache/jackspeak-npm-2.2.1-0644c98bfe-e29291c0d0.zip/node_modules/jackspeak/",\
+        ["npm:2.3.6", {\
+          "packageLocation": "./.yarn/cache/jackspeak-npm-2.3.6-42e1233172-57d43ad11e.zip/node_modules/jackspeak/",\
           "packageDependencies": [\
-            ["jackspeak", "npm:2.2.1"],\
+            ["jackspeak", "npm:2.3.6"],\
             ["@isaacs/cliui", "npm:8.0.2"],\
             ["@pkgjs/parseargs", "npm:0.11.0"]\
           ],\
@@ -5178,18 +5178,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["lru-cache", [\
+        ["npm:10.0.1", {\
+          "packageLocation": "./.yarn/cache/lru-cache-npm-10.0.1-0e1abf4c13-06f8d0e1ce.zip/node_modules/lru-cache/",\
+          "packageDependencies": [\
+            ["lru-cache", "npm:10.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:6.0.0", {\
           "packageLocation": "./.yarn/cache/lru-cache-npm-6.0.0-b4c8668fe1-f97f499f89.zip/node_modules/lru-cache/",\
           "packageDependencies": [\
             ["lru-cache", "npm:6.0.0"],\
             ["yallist", "npm:4.0.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:9.1.2", {\
-          "packageLocation": "./.yarn/cache/lru-cache-npm-9.1.2-4846dc8c34-d3415634be.zip/node_modules/lru-cache/",\
-          "packageDependencies": [\
-            ["lru-cache", "npm:9.1.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5312,10 +5312,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:6.0.2", {\
-          "packageLocation": "./.yarn/cache/minipass-npm-6.0.2-a7fca64b94-d140b91f4a.zip/node_modules/minipass/",\
+        ["npm:7.0.4", {\
+          "packageLocation": "./.yarn/cache/minipass-npm-7.0.4-eacb4e042e-87585e258b.zip/node_modules/minipass/",\
           "packageDependencies": [\
-            ["minipass", "npm:6.0.2"]\
+            ["minipass", "npm:7.0.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5719,12 +5719,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["path-scurry", [\
-        ["npm:1.9.2", {\
-          "packageLocation": "./.yarn/cache/path-scurry-npm-1.9.2-e4789f2bee-92888dfb68.zip/node_modules/path-scurry/",\
+        ["npm:1.10.1", {\
+          "packageLocation": "./.yarn/cache/path-scurry-npm-1.10.1-52bd946f2e-e2557cff3a.zip/node_modules/path-scurry/",\
           "packageDependencies": [\
-            ["path-scurry", "npm:1.9.2"],\
-            ["lru-cache", "npm:9.1.2"],\
-            ["minipass", "npm:6.0.2"]\
+            ["path-scurry", "npm:1.10.1"],\
+            ["lru-cache", "npm:10.0.1"],\
+            ["minipass", "npm:7.0.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6025,11 +6025,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:5.0.1", {\
-          "packageLocation": "./.yarn/cache/rimraf-npm-5.0.1-26fb251a1d-bafce85391.zip/node_modules/rimraf/",\
+        ["npm:5.0.4", {\
+          "packageLocation": "./.yarn/cache/rimraf-npm-5.0.4-525827beb5-4423011967.zip/node_modules/rimraf/",\
           "packageDependencies": [\
-            ["rimraf", "npm:5.0.1"],\
-            ["glob", "npm:10.3.0"]\
+            ["rimraf", "npm:5.0.4"],\
+            ["glob", "npm:10.3.10"]\
           ],\
           "linkType": "HARD"\
         }]\
