@@ -30,7 +30,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@octokit/rest", "npm:20.0.2"],\
             ["@types/jest", "npm:29.5.11"],\
-            ["@types/node", "npm:20.11.10"],\
+            ["@types/node", "npm:20.11.11"],\
             ["@typescript-eslint/eslint-plugin", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:6.20.0"],\
             ["@typescript-eslint/parser", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:6.20.0"],\
             ["copyfiles", "npm:2.4.1"],\
@@ -1183,7 +1183,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@fantasticfiasco/expect", "workspace:."],\
             ["@octokit/rest", "npm:20.0.2"],\
             ["@types/jest", "npm:29.5.11"],\
-            ["@types/node", "npm:20.11.10"],\
+            ["@types/node", "npm:20.11.11"],\
             ["@typescript-eslint/eslint-plugin", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:6.20.0"],\
             ["@typescript-eslint/parser", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:6.20.0"],\
             ["copyfiles", "npm:2.4.1"],\
@@ -2122,10 +2122,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:20.11.10", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-20.11.10-169269fe65-58544f52c1.zip/node_modules/@types/node/",\
+        ["npm:20.11.11", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-20.11.11-46006fed43-4d8624d9fc.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:20.11.10"],\
+            ["@types/node", "npm:20.11.11"],\
             ["undici-types", "npm:5.26.5"]\
           ],\
           "linkType": "HARD"\
