@@ -35,7 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:6.20.0"],\
             ["copyfiles", "npm:2.4.1"],\
             ["eslint", "npm:8.56.0"],\
-            ["inquirer", "npm:9.2.13"],\
+            ["inquirer", "npm:9.2.14"],\
             ["jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.7.0"],\
             ["rimraf", "npm:5.0.5"],\
             ["ts-jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.1.2"],\
@@ -1188,7 +1188,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:6.20.0"],\
             ["copyfiles", "npm:2.4.1"],\
             ["eslint", "npm:8.56.0"],\
-            ["inquirer", "npm:9.2.13"],\
+            ["inquirer", "npm:9.2.14"],\
             ["jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.7.0"],\
             ["rimraf", "npm:5.0.5"],\
             ["ts-jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.1.2"],\
@@ -4336,10 +4336,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["inquirer", [\
-        ["npm:9.2.13", {\
-          "packageLocation": "./.yarn/cache/inquirer-npm-9.2.13-8792f9e3fb-3fdc0e1f2c.zip/node_modules/inquirer/",\
+        ["npm:9.2.14", {\
+          "packageLocation": "./.yarn/cache/inquirer-npm-9.2.14-6c20e3055f-a4e4d6eaa2.zip/node_modules/inquirer/",\
           "packageDependencies": [\
-            ["inquirer", "npm:9.2.13"],\
+            ["inquirer", "npm:9.2.14"],\
             ["@ljharb/through", "npm:2.3.12"],\
             ["ansi-escapes", "npm:4.3.2"],\
             ["chalk", "npm:5.3.0"],\
@@ -8908,7 +8908,8 @@ class ZipFS extends BasePortableFakeFS {
           stream$1.destroy();
         },
         bytesRead: 0,
-        path: p
+        path: p,
+        pending: false
       }
     );
     const immediate = setImmediate(async () => {
@@ -8949,11 +8950,12 @@ class ZipFS extends BasePortableFakeFS {
         }
       }),
       {
-        bytesWritten: 0,
-        path: p,
         close() {
           stream$1.destroy();
-        }
+        },
+        bytesWritten: 0,
+        path: p,
+        pending: false
       }
     );
     stream$1.on(`data`, (chunk) => {
@@ -9893,18 +9895,10 @@ class ProxiedFS extends FakeFS {
     return this.baseFs.symlinkSync(mappedTarget, mappedP, type);
   }
   async readFilePromise(p, encoding) {
-    if (encoding === `utf8`) {
-      return this.baseFs.readFilePromise(this.fsMapToBase(p), encoding);
-    } else {
-      return this.baseFs.readFilePromise(this.fsMapToBase(p), encoding);
-    }
+    return this.baseFs.readFilePromise(this.fsMapToBase(p), encoding);
   }
   readFileSync(p, encoding) {
-    if (encoding === `utf8`) {
-      return this.baseFs.readFileSync(this.fsMapToBase(p), encoding);
-    } else {
-      return this.baseFs.readFileSync(this.fsMapToBase(p), encoding);
-    }
+    return this.baseFs.readFileSync(this.fsMapToBase(p), encoding);
   }
   async readdirPromise(p, opts) {
     return this.baseFs.readdirPromise(this.mapToBase(p), opts);
@@ -10630,24 +10624,14 @@ class ZipOpenFS extends BasePortableFakeFS {
   }
   async readFilePromise(p, encoding) {
     return this.makeCallPromise(p, async () => {
-      switch (encoding) {
-        case `utf8`:
-          return await this.baseFs.readFilePromise(p, encoding);
-        default:
-          return await this.baseFs.readFilePromise(p, encoding);
-      }
+      return await this.baseFs.readFilePromise(p, encoding);
     }, async (zipFs, { subPath }) => {
       return await zipFs.readFilePromise(subPath, encoding);
     });
   }
   readFileSync(p, encoding) {
     return this.makeCallSync(p, () => {
-      switch (encoding) {
-        case `utf8`:
-          return this.baseFs.readFileSync(p, encoding);
-        default:
-          return this.baseFs.readFileSync(p, encoding);
-      }
+      return this.baseFs.readFileSync(p, encoding);
     }, (zipFs, { subPath }) => {
       return zipFs.readFileSync(subPath, encoding);
     });
@@ -11339,38 +11323,28 @@ function patchFs(patchedFs, fakeFs) {
     patchedFs.realpathSync.native = patchedFs.realpathSync;
   }
   {
-    const origEmitWarning = process.emitWarning;
-    process.emitWarning = () => {
-    };
-    let patchedFsPromises;
-    try {
-      patchedFsPromises = patchedFs.promises;
-    } finally {
-      process.emitWarning = origEmitWarning;
-    }
-    if (typeof patchedFsPromises !== `undefined`) {
-      for (const fnName of ASYNC_IMPLEMENTATIONS) {
-        const origName = fnName.replace(/Promise$/, ``);
-        if (typeof patchedFsPromises[origName] === `undefined`)
-          continue;
-        const fakeImpl = fakeFs[fnName];
-        if (typeof fakeImpl === `undefined`)
-          continue;
-        if (fnName === `open`)
-          continue;
-        setupFn(patchedFsPromises, origName, (pathLike, ...args) => {
-          if (pathLike instanceof FileHandle) {
-            return pathLike[origName].apply(pathLike, args);
-          } else {
-            return fakeImpl.call(fakeFs, pathLike, ...args);
-          }
-        });
-      }
-      setupFn(patchedFsPromises, `open`, async (...args) => {
-        const fd = await fakeFs.openPromise(...args);
-        return new FileHandle(fd, fakeFs);
+    const patchedFsPromises = patchedFs.promises;
+    for (const fnName of ASYNC_IMPLEMENTATIONS) {
+      const origName = fnName.replace(/Promise$/, ``);
+      if (typeof patchedFsPromises[origName] === `undefined`)
+        continue;
+      const fakeImpl = fakeFs[fnName];
+      if (typeof fakeImpl === `undefined`)
+        continue;
+      if (fnName === `open`)
+        continue;
+      setupFn(patchedFsPromises, origName, (pathLike, ...args) => {
+        if (pathLike instanceof FileHandle) {
+          return pathLike[origName].apply(pathLike, args);
+        } else {
+          return fakeImpl.call(fakeFs, pathLike, ...args);
+        }
       });
     }
+    setupFn(patchedFsPromises, `open`, async (...args) => {
+      const fd = await fakeFs.openPromise(...args);
+      return new FileHandle(fd, fakeFs);
+    });
   }
   {
     patchedFs.read[nodeUtils.promisify.custom] = async (fd, buffer, ...args) => {
