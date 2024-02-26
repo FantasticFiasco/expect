@@ -35,7 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:6.21.0"],\
             ["copyfiles", "npm:2.4.1"],\
             ["eslint", "npm:8.56.0"],\
-            ["inquirer", "npm:9.2.14"],\
+            ["inquirer", "npm:9.2.15"],\
             ["jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.7.0"],\
             ["rimraf", "npm:5.0.5"],\
             ["ts-jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.1.2"],\
@@ -1188,7 +1188,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:6.21.0"],\
             ["copyfiles", "npm:2.4.1"],\
             ["eslint", "npm:8.56.0"],\
-            ["inquirer", "npm:9.2.14"],\
+            ["inquirer", "npm:9.2.15"],\
             ["jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.7.0"],\
             ["rimraf", "npm:5.0.5"],\
             ["ts-jest", "virtual:c856ea10df716505192e140b04962b39397eae79d77f2618a23f0d97c65c77331977162df3bafba8da9e9ed2018b7fce0dcecd25a70b538b1bf451416fb6281a#npm:29.1.2"],\
@@ -4336,10 +4336,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["inquirer", [\
-        ["npm:9.2.14", {\
-          "packageLocation": "./.yarn/cache/inquirer-npm-9.2.14-6c20e3055f-a4e4d6eaa2.zip/node_modules/inquirer/",\
+        ["npm:9.2.15", {\
+          "packageLocation": "./.yarn/cache/inquirer-npm-9.2.15-7a7bdf6499-98e385ef29.zip/node_modules/inquirer/",\
           "packageDependencies": [\
-            ["inquirer", "npm:9.2.14"],\
+            ["inquirer", "npm:9.2.15"],\
             ["@ljharb/through", "npm:2.3.12"],\
             ["ansi-escapes", "npm:4.3.2"],\
             ["chalk", "npm:5.3.0"],\
